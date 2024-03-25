@@ -50,8 +50,9 @@ PERMUTATIONS:
 # REQUIRED - REGRESSIONS - List of desired features to regress from observables.
 # ------------------------------------------------------------------------------
 REGRESSIONS:
-  Event:
+  EVENT:
     - wprime_mass
+
 # -----------------------------------------------------------------------------
 # REQUIRED - REGRESSIONS - List of desired classes to predict from observables.
 # -----------------------------------------------------------------------------
