@@ -255,6 +255,10 @@ class JetReconstructionTraining(JetReconstructionNetwork):
                 raise ValueError("Assignment loss has diverged!")
 
             if torch.isinf(assignment_loss).any():
+                print(assignment_loss)
+                print("sources: ", batch.sources)
+                print("targets: ", batch.assignment_targets)
+                print("outputs: ", outputs.assignments)
                 raise ValueError("Assignment targets contain a collision.")
 
         # ===================================================================================================
