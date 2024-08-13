@@ -9,6 +9,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Personal
+wprime*/**
+
 # Distribution / packaging
 .Python
 build/

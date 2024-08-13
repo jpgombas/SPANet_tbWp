@@ -38,7 +38,8 @@ EVENT:
     - b
   bR:
     - b
-
+  tA:
+    - b
 
 # ---------------------------------------------------------
 # REQUIRED KEY - PERMUTATIONS - List of valid permutations.
@@ -57,3 +58,5 @@ REGRESSIONS:
 # REQUIRED - REGRESSIONS - List of desired classes to predict from observables.
 # -----------------------------------------------------------------------------
 CLASSIFICATIONS:
+  EVENT:
+    - resonant_channel
