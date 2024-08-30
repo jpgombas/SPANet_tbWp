@@ -7,7 +7,7 @@ INPUTS:
   # -----------------------------------------------------------------------------
   SEQUENTIAL:
     Source:
-      mass: log_normalize
+      e: log_normalize
       pt: log_normalize
       eta: normalize
       phi: normalize
@@ -22,7 +22,7 @@ INPUTS:
       sin_phi: normalize # /INPUTS/Met/sin_phi
       cos_phi: normalize # /INPUTS/Met/cos_phi
     lepton:
-      mass: log_normalize
+      e: log_normalize
       pt: log_normalize
       eta: normalize
       phi: normalize
@@ -34,7 +34,12 @@ INPUTS:
 # ----------------------------------------------------------------------
 # Resonant top is hadronic and associated top is leptonic
 EVENT:
-
+  tR:
+    - b
+  bR:
+    - b
+  tA:
+    - b
 
 # ---------------------------------------------------------
 # REQUIRED KEY - PERMUTATIONS - List of valid permutations.

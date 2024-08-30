@@ -11,6 +11,7 @@ __pycache__/
 
 # Personal
 wprime*/**
+old_spanet_models
 
 # Distribution / packaging
 .Python

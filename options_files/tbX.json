@@ -28,8 +28,8 @@
     "initial_embedding_skip_connections": true,
 
     "event_info_file": "./event_files/1lep_tbX.yaml",
-    "training_file": "/home/jg/fast-frames-tb-x/to_spanet/wprime_combine1.h5",
-    "validation_file": "/home/jg/fast-frames-tb-x/to_spanet/wprime_combine2.h5",
+    "training_file": "/home/jg/fast-frames-tb-x/to_spanet/wprime_combine_eNum2.h5",
+    "validation_file": "/home/jg/fast-frames-tb-x/to_spanet/wprime_combine_eNum1.h5",
 
     "normalize_features": true,
     "limit_to_num_jets": 0,
@@ -39,7 +39,7 @@
 
     "dataset_limit": 1.0,
     "train_validation_split": 0.95,
-    "batch_size": 256,
+    "batch_size": 516,
     "num_dataloader_workers": 16,
 
     "mask_sequence_vectors": true,
