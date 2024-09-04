@@ -15,14 +15,14 @@ energies=(1TeV 1p2TeV 1p4TeV 1p6TeV 1p8TeV 2TeV 2p5TeV 3TeV 4TeV)
 #                 ~/fast-frames-tb-x/to_spanet/wprime_combine_LH_${energy}_${dsid}.h5 --gpu
 # done
 cp options_files/tbX_template.json options_files/tbX.json
-sed -i "s/TTTT/wprime_combine_eNum1.h5/g" options_files/tbX.json
-sed -i "s/VVVV/wprime_combine_eNum2.h5/g" options_files/tbX.json
-python3 -m spanet.train -of options_files/tbX.json -n wprime1_long_seed --gpus 1 --random_seed 1996
+sed -i "s/TTTT/wprime_combine_1.h5/g" options_files/tbX.json
+sed -i "s/VVVV/wprime_combine_2.h5/g" options_files/tbX.json
+python3 -m spanet.train -of options_files/tbX.json -n wprime1_wr_regress --gpus 1 --random_seed 1996
 
 cp options_files/tbX_template.json options_files/tbX.json
-sed -i "s/TTTT/wprime_combine_eNum2.h5/g" options_files/tbX.json
-sed -i "s/VVVV/wprime_combine_eNum1.h5/g" options_files/tbX.json
-python3 -m spanet.train -of options_files/tbX.json -n wprime2_long_seed --gpus 1 --random_seed 1996 
+sed -i "s/TTTT/wprime_combine_2.h5/g" options_files/tbX.json
+sed -i "s/VVVV/wprime_combine_1.h5/g" options_files/tbX.json
+python3 -m spanet.train -of options_files/tbX.json -n wprime2_wr_regress --gpus 1 --random_seed 1996 
 
 # mv spanet_output/version_0 spanet_output/wprime_all_masses
 

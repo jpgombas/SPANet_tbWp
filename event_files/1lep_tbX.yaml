@@ -53,6 +53,10 @@ PERMUTATIONS:
 REGRESSIONS:
   EVENT:
     - wprime_mass
+    - wr_eta
+    - wr_phi
+    - wr_pt
+    - wr_m
 
 # -----------------------------------------------------------------------------
 # REQUIRED - REGRESSIONS - List of desired classes to predict from observables.
