@@ -18,13 +18,13 @@ def create_hdf5_output(
     print(f"Creating output file at: {output_file}")
     with h5py.File(output_file, 'w') as output:
         # Copy over the source features from the input file.
-        with h5py.File(dataset.data_file, 'r') as input_dataset:
-            for input_name in input_dataset[SpecialKey.Inputs]:
-                for feature_name in input_dataset[SpecialKey.Inputs][input_name]:
-                    output.create_dataset(
-                        f"{SpecialKey.Inputs}/{input_name}/{feature_name}",
-                        data=input_dataset[SpecialKey.Inputs][input_name][feature_name]
-                    )
+        # with h5py.File(dataset.data_file, 'r') as input_dataset:
+        #     for input_name in input_dataset[SpecialKey.Inputs]:
+        #         for feature_name in input_dataset[SpecialKey.Inputs][input_name]:
+        #             output.create_dataset(
+        #                 f"{SpecialKey.Inputs}/{input_name}/{feature_name}",
+        #                 data=input_dataset[SpecialKey.Inputs][input_name][feature_name]
+        #             )
 
         # Construct the assignment structure. Output both the top assignment and associated probabilities.
         for event_particle in dataset.event_info.event_particles:
